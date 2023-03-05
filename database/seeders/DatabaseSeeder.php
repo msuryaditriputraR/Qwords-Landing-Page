@@ -14,12 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $menu = ['Cloud Hosting', 'Server', 'Domain', 'Email Suite', 'Services', 'Internet Access'];
+        $menus = ['Cloud Hosting', 'Server', 'Domain', 'Email Suite', 'Services', 'Internet Access'];
 
-        foreach ($menu as $i => $m) {
+        foreach ($menus as $index => $menu) {
             DB::table('menu')->insert([
-                'nama_menu' => $m,
-                'urutan' => $i + 1
+                'nama_menu' => $menu,
+                'urutan' => $index + 1
             ]);
         }
     }
