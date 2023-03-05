@@ -15,6 +15,6 @@ use App\Models\menu;
 */
 
 Route::get('/', function () {
-    $menu = menu::all();
+    $menu = menu::orderBy('urutan')->get();
     return view('index', ['title' => 'Qwords', 'menu' => $menu]);
 });
