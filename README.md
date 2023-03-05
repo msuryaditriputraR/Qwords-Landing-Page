@@ -1,6 +1,7 @@
 # Final Project Qwords - Landing Page
 
-## How to Start
+Built with [Laravel 9](https://laravel.com/) & [Tailwind](https://tailwindcss.com/)
+## How to Start Development
 
 ``` 
  1. php artisan migrate 
@@ -11,5 +12,9 @@
 ```
 
 ``` 
- 3. php artisan serve 
+ 3. npm run watch
+```
+
+``` 
+ 4. php artisan serve 
 ```
