@@ -11,6 +11,10 @@
 
 <body>
     @include('partials/header', $menu)
+
+    <main>
+        @include('sections/home')
+    </main>
 </body>
 
 </html>
