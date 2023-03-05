@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "cjhowe7.laravel-blade"
+    "cjhowe7.laravel-blade",
+    "shufo.vscode-blade-formatter"
   ]
 }
