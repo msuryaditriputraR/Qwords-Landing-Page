@@ -14,6 +14,8 @@
 
     <main>
         @include('sections/home')
+
+        @include('sections/domain', $domains)
     </main>
 </body>
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Domain;
 use Illuminate\Support\Facades\Route;
 use App\Models\menu;
 
@@ -16,5 +17,6 @@ use App\Models\menu;
 
 Route::get('/', function () {
     $menu = menu::orderBy('urutan')->get();
-    return view('index', ['title' => 'Qwords', 'menu' => $menu]);
+    $domains = Domain::orderBy('nama_domain')->get();
+    return view('index', ['title' => 'Qwords', 'menu' => $menu, 'domains' => $domains]);
 });
