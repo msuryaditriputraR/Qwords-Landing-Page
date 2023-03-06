@@ -574,6 +574,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 109 11 / var(--tw-bg-opacity));
 }
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\'\/img\/main-bg\.webp\'\)\] {
   background-image: url('/img/main-bg.webp');
 }
