@@ -3,6 +3,7 @@
 use App\Models\Domain;
 use Illuminate\Support\Facades\Route;
 use App\Models\menu;
+use App\Models\Services;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,6 @@ use App\Models\menu;
 Route::get('/', function () {
     $menu = menu::orderBy('urutan')->get();
     $domains = Domain::orderBy('nama_domain')->get();
-    return view('index', ['title' => 'Qwords', 'menu' => $menu, 'domains' => $domains]);
+    $services = Services::all();
+    return view('index', ['title' => 'Qwords', 'menu' => $menu, 'domains' => $domains, 'services' => $services]);
 });
